@@ -12,7 +12,7 @@ declaração()
 
 
 
-/*  Faz linha de teste para esse código:  */
+/*  SEM MODIFICAR A FUNÇÃO TESTAR SEM USAR JEST  */
 
 
 
