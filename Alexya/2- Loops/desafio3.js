@@ -8,6 +8,7 @@ function converteNota(nota) {
     else if (nota >= 70 && nota <= 79) { return "C" }
     else if (nota >= 80 && nota <= 89) { return "B" }
     else if (nota >= 90 && nota <= 100) { return "A" }
+    else if (nota < 0 || nota > 100) { return "Nota invalida, insira de 0 a 100" }
     else { return "Nota invalida, insira de 0 a 100" }
 }
 console.log(`A nota ${nota} equivale ao conceito ${converteNota(nota)}`)
