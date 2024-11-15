@@ -6,16 +6,28 @@
   <title>To do List</title>
 </head>
 <body>
+
   <div class="todo-container">
+
     <h1>Lista de Tarefas</h1>
+
     <input type="text" id="task-input" placeholder="Adicionar nova tarefa">
-    <button id="add-task-btn">Adicionar</button>
+
+    <button id="add-task-btn" onclick="adicionarTarefa()">Adicionar</button>
+
+    <ul id="task-list"></ul>
+
+
     <div class="filters">
       <button data-filter="all">Todas</button>
       <button data-filter="completed">Concluídas</button>
       <button data-filter="pending">Pendentes</button>
     </div>
+
   </div>
+
+
+
   <script src="desafio1.js"></script>
 
 </body>
