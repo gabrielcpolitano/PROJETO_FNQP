@@ -39,3 +39,23 @@ function adicionarTarefa() {
   entradaTarefa.value = ''
   entradaTarefa. focus()
 }
+
+// Funcao para lidar com cliques nas tarefas (concluir ou excluir)
+
+function manipularCliqueTarefa(e){
+  const elemento = e.target
+
+  // Verificar se o botao de completar foi clicado
+  
+  if (elemento.classList.contains(`botao-completar`)) {
+    const itemTarefa = elemento.parentElement
+    itemTarefa.classList.toggle(`concluida`)
+  }
+
+  // Verificar se o botao de excluir foi clicado
+
+  if (elemento.classList.contains(`botao-excluir`)) {
+    const itemTarefa = elemento.parentElement
+    itemTarefa.remover()
+  }
+}
