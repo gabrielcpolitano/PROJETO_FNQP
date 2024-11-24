@@ -11,4 +11,4 @@ Bem-vindo(a)! Este repositório está aberto para colaboração, mas antes de co
 ## 🔐 Como receber permissão para colaborar
 
 Para participar, envie uma mensagem no meu Discord com seu GitHub. Assim que eu receber suas informações, te darei a permissão para colaborar.
- 
+  
