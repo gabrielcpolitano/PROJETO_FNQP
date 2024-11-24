@@ -1,7 +1,7 @@
 ![PROJETO AMIGO](https://uniathenaprods3.uniathena.com/s3fs-public/insights-article/seriesreview-e2-80-9cfriends-e2-80-9d_0.jpg)
 # Projeto Amigo
 
-Bem-vindo(a)! Este repositório está aberto para colaboração, mas antes de começar, siga as regras abaixo para manter tudo organizado.
+Bem-vindo(a)! Este repositório está aberto para colaboração, mas antes de começar, siga as regras abaixo para manter tudo organizado. 
 
 ## 📋 Regras de Colaboração
 
