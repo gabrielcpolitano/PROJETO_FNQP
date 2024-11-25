@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <script src="C:\Estudos\PROJETO_FNQP\Alexya\4- DOM\desafio1.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div id="add-task-btn" class="row">
+            <h1>To Do List</h1>
+            <form>
+                <input id="taskTexto" type="text" />
+                <input type="button" value="Adicionar task" onclick="adicionarNovaTarefa()" />
+            </form>
+        </div>
+        <div class="row" id="filter-group">
+            <h1>Filtrar </h1>
+            <input type="text" id="taskFilter">
+            <input type="button" value="Pesquisar" onclick="pesquisarTask()" />
+            <div class="radio">
+                <input type="radio" name="filtro" onclick="filtrarConcluidas()">concluidas</button>
+                <input type="radio" name="filtro" onclick="listarTasks()">todas</button>
+                <input type="radio" name="filtro" onclick="filtrarAtivas()">ativas</button>
+            </div>
+        </div>
+        <div id="taskList">
+        </div>
+</body>
+
+</html>
+<style>
+    .content {
+        width: 300px;
+        border: 5px solid gray;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 50px;
+    }
+
+    .concluida {
+        text-decoration: line-through;
+        color: gray;
+    }
+</style>
