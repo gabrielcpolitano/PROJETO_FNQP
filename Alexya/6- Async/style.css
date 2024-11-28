@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(243, 222, 194);
+}
+
+.container {
+    padding: 50px;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: sans-serif; 
+}
+
+button{
+    font-family: sans-serif; 
+    font-size: 16px;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+ul, li {
+    background-color: rgb(236, 247, 230);
+}
