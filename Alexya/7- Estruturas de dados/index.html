@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estruturas de Dados - Estudo Prático</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      max-width: 600px;
+    }
+    .structure {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .output {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+    button {
+      padding: 5px 10px;
+      font-size: 1em;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #f9f9f9;
+    }
+    button:hover {
+      background-color: #e0e0e0;
+    }
+    input {
+      padding: 5px;
+      font-size: 1em;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estruturas de Dados</h1>
+  <div class="container">
+    <div class="structure">
+      <h2>Pilha</h2>
+      <div class="actions">
+        <input id="stack-input" type="text" placeholder="Digite um valor">
+        <button onclick="pushStack()">Empilhar</button>
+        <button onclick="popStack()">Desempilhar</button>
+      </div>
+      <div class="output" id="stack-output">Pilha: []</div>
+    </div>
+
+    <div class="structure">
+      <h2>Fila</h2>
+      <div class="actions">
+        <input id="queue-input" type="text" placeholder="Digite um valor">
+        <button onclick="enqueue()">Adicionar</button>
+        <button onclick="dequeue()">Remover</button>
+      </div>
+      <div class="output" id="queue-output">Fila: []</div>
+    </div>
+
+    <div class="structure">
+      <h2>Lista Ligada</h2>
+      <div class="actions">
+        <input id="list-input" type="text" placeholder="Digite um valor">
+        <button onclick="addToLinkedList()">Adicionar</button>
+        <button onclick="removeFromLinkedList()">Remover</button>
+      </div>
+      <div class="output" id="list-output">Lista Ligada: (vazia)</div>
+    </div>
+  </div>
+</body>
+</html>
