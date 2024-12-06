@@ -1,0 +1,3 @@
+Dia 06
+
+-- Estruturei todo o projeto de PORTFOLIO
