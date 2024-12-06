@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+p{
+  background-color: antiquewhite;
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
+  user-select: none;
+}
