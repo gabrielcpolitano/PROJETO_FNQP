@@ -1,5 +1,4 @@
 let basket = JSON.parse(localStorage.getItem("carrinho")) || [];
-console.log(basket);
 let shop = document.getElementById("shop");
 
 let generateShop = () => {
@@ -42,7 +41,6 @@ let increment = (id) => {
   } else {
     basketItem.item += 1;
   }
-  console.log(basket);
 
   update(selectedItem);
   localStorage.setItem("carrinho", JSON.stringify(basket));
@@ -67,8 +65,6 @@ let decrement = (id) => {
 let update = (itemId) => {
   let selectedItem = itemId.id;
   let searchOnBasket = basket.find((x) => x.id === selectedItem);
-  console.log(searchOnBasket);
-  console.log(selectedItem);
   document.getElementById(selectedItem).innerHTML = searchOnBasket?.item
     ? searchOnBasket?.item
     : 0;
