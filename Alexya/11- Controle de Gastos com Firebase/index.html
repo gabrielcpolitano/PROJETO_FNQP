@@ -42,17 +42,17 @@
 <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
 <script>
     const firebaseConfig = {
-        apiKey: "AIzaSyC-kxeWzdueFysqssV4RO8177X7hbmtxws",
-        authDomain: "controle-de-gastos77.firebaseapp.com",
+        apiKey: "",
+        authDomain: "controle-de-gastos77",
         projectId: "controle-de-gastos77",
-        storageBucket: "controle-de-gastos77.firebasestorage.app",
-        messagingSenderId: "502815191491",
-        appId: "1:502815191491:web:1ad17a80d216ff3db10d76"
+        storageBucket: "controle-de-gastos77.",
+        messagingSenderId: "",
+        appId: ""
     };
     firebase.initializeApp(firebaseConfig);
 
     console.log('antes');
-    firebase.auth().signInWithEmailAndPassword("qualquer@gmail.com", "123456@").then(response => {
+    firebase.auth().signInWithEmailAndPassword("emailqualquer@gmail.com", "1234456").then(response => {
         console.log('sucess', response)
     }).catch(error => {
         console.log('error', error)
