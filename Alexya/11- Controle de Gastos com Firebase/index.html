@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Controle de gastos</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <div>
+                <div><label>Email</label></div>
+                <input id="email" type="email" name="email" onchange="onChangeEmail()" placeholder="seu@email.com" />
+                <div id="email-required-error" class="error">Email é obrigatório</div>
+                <div id="email-invalid-error" class="error">Email é inválido</div>
+            </div>
+            <div>
+                <div><label>Senha</label></div>
+                <input id="password" type="password" name="password" onchange="onChangePassword()"
+                    placeholder="Senha" />
+                <div id="password-required-error" class="error">Senha é obrigatório</div>
+            </div>
+            <div>
+                <button id="recover-password-button" type="button" class="clear" disabled="true">Recuperar
+                    senha</button>
+            </div>
+            <div>
+                <button id="login-button" type="button" class="solid" onclick="login()" disabled="true">Entrar</button>
+            </div>
+            <div>
+                <button type="button" onclick="register()" class="outline">Registrar</button>
+            </div>
+    </form>
+</body>
+
+<link rel="stylesheet" href="index.css" />
+
+<script src="index.js"></script>
+<script src="validations.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "",
+        authDomain: "controle-de-gastos77",
+        projectId: "controle-de-gastos77",
+        storageBucket: "controle-de-gastos77.",
+        messagingSenderId: "",
+        appId: ""
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    console.log('antes');
+    firebase.auth().signInWithEmailAndPassword("emailqualquer@gmail.com", "1234456").then(response => {
+        console.log('sucess', response)
+    }).catch(error => {
+        console.log('error', error)
+    });
+    console.log('depois');
+</script>
+
+</html>
