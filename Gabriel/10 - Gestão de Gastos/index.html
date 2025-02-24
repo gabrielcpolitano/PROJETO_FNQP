@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Login - Controle de gastos</title>
+</head>
+<body>
+    <form action="exemplo.html">
+
+      <div>
+        <div><label>Email</label></div>
+        <input type="email" name="email" id="email" oninput ="validadorEmail()" placeholder="seu@email.com"/>
+        <div class="error" id="aviso-email-obrigadorio">Email e obrigadorio</div>
+        <div class="error" id="aviso-email-validade">Email e invalido</div>
+      </div>
+      
+      <div>
+        <div><label>Senha</label></div>
+        <input type="password" name="password" id="senha" oninput="validadorSenha()" placeholder="Senha"/>
+        <div class="error" id="aviso-senha-obrigadoria">Senha e obrigadorio</div>
+      </div>
+
+      <div>
+        <button type="button" class="clear" id="recuperar-senha-botao" disabled="true">Recuperar Senhar</button>
+      </div>
+
+      <div>
+        <button type="button" class="solid" id="login-botao" disabled="true">Entrar</button>
+      </div>
+
+      <div>
+        <button type="button" class="outline">Registrar</button>
+      </div>
+
+    </form>
+</body>
+
+<script src="index.js"></script>
+
+</html>

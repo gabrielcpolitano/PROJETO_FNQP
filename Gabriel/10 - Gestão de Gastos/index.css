@@ -1,0 +1,48 @@
+body{
+  background-color: rgb(45, 211, 111);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+form{
+  width: 300px;
+}
+input{
+  border: none;
+}
+input, button{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: -webkit-fill-available;
+}
+button{
+  cursor: pointer;
+}
+button:active{
+  opacity: 0.8;
+}
+button[disabled] {
+  opacity: 0.7;
+}
+.clear{
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.solid{
+  background-color: white;
+  border: none;
+  color: rgb(45, 211, 111);
+}
+.outline{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white
+}
+
+.error{
+  color: white;
+  background: red;
+  display: none;
+}

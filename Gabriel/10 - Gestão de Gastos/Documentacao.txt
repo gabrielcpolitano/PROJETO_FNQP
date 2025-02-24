@@ -1,0 +1,9 @@
+// Função que ativa ou desativa os botôes de recuperar senha e entrar
+
+// Função que mostra aviso de erro se não tiver nenhum valor no campo do formulario
+
+// Função que mostra aviso de erro se tiver erro no campo de senha
+
+// Função que roda outras funções para fazer a validação do email
+
+// Função que roda outras funções para fazer a validação da senha
